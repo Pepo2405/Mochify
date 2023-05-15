@@ -1,10 +1,9 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
   const prefix = import.meta.env.VITE_API_URL;
   const [text, setText] = useState("")
-  const ref = useRef<HTMLAnchorElement | null>(null)
   const [disabled, setDisabled] = useState(false)
 
   const handleClick = () => {
